@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="northern_whale_dolphin_sea_ocean.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-w1-iQm">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fishackathon_web_wht_logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ssg-Ev-89w">
+                                <rect key="frame" x="20" y="591" width="314" height="157"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="raP-hU-yTT">
+                                <rect key="frame" x="403" y="224" width="292" height="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDY-9L-yy1">
+                                <rect key="frame" x="403" y="295" width="292" height="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-tL-IPD">
+                                <rect key="frame" x="347" y="305" width="40" height="40"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5V2-En-KX2">
+                                <rect key="frame" x="347" y="388" width="348" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="SignIn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jbX-jz-DdD" kind="modal" id="c9j-gC-Tmd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oceanAgent.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWt-xb-ug2">
+                                <rect key="frame" x="757" y="606" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZC-lx-kSS">
+                                <rect key="frame" x="347" y="234" width="40" height="40"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="pwdImageView" destination="ueR-tL-IPD" id="mo9-LU-GQf"/>
+                        <outlet property="pwdTextField" destination="ZDY-9L-yy1" id="6Iz-8B-4Ya"/>
+                        <outlet property="userImageView" destination="gZC-lx-kSS" id="WG3-9t-LMn"/>
+                        <outlet property="userTextField" destination="raP-hU-yTT" id="3Qa-A7-w5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="540"/>
+        </scene>
+        <!--Add Gear View Controller-->
+        <scene sceneID="NAk-JH-L61">
+            <objects>
+                <viewController id="mbQ-u4-A2J" customClass="AddGearViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4tb-S8-gZl"/>
+                        <viewControllerLayoutGuide type="bottom" id="MBs-kY-V2y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0VI-O8-oUL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-91-HII">
+                                <rect key="frame" x="261" y="20" width="503" height="720"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sea_ocean_water.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3aZ-HX-wQE">
+                                        <rect key="frame" x="0.0" y="0.0" width="503" height="720"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Please Enter Your ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-41-xDP">
+                                        <rect key="frame" x="133" y="59" width="336" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezc-ri-X77">
+                                        <rect key="frame" x="86" y="638" width="132" height="74"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="summit:" destination="mbQ-u4-A2J" eventType="touchUpInside" id="laW-Fh-7AQ"/>
+                                            <segue destination="jbX-jz-DdD" kind="modal" id="6Fe-m5-bgC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYT-0u-K83">
+                                        <rect key="frame" x="305" y="638" width="132" height="74"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancel:" destination="mbQ-u4-A2J" eventType="touchUpInside" id="ooy-C5-9pD"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u26-w2-A1H">
+                                        <rect key="frame" x="163" y="124" width="242" height="239"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-0J-bxz">
+                                        <rect key="frame" x="174" y="142" width="221" height="204"/>
+                                        <connections>
+                                            <action selector="takePic:" destination="mbQ-u4-A2J" eventType="touchUpInside" id="HDa-Cw-nht"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DYN-b1-djq">
+                                        <rect key="frame" x="8" y="430" width="487" height="200"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KY4-Vo-XdM">
+                                            <size key="itemSize" width="175" height="175"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GearCollectionViewCell" id="6l3-aS-dQA" customClass="GearCollectionViewCell">
+                                                <rect key="frame" x="0.0" y="12.5" width="175" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPd-WU-VnX">
+                                                            <rect key="frame" x="15" y="11" width="145" height="152"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <connections>
+                                                    <outlet property="gearImage" destination="GPd-WU-VnX" id="1Yx-dS-KzK"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-Ul-NKc">
+                                        <rect key="frame" x="23" y="219" width="50" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdX-Wo-chI">
+                                        <rect key="frame" x="23" y="372" width="50" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szt-GO-On8">
+                                        <rect key="frame" x="23" y="59" width="50" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ML1-ra-AQT"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="addButton" destination="ezc-ri-X77" id="ah9-Ho-7AA"/>
+                        <outlet property="cameraImageView" destination="ryr-Ul-NKc" id="jdA-fo-ibh"/>
+                        <outlet property="cancelButton" destination="BYT-0u-K83" id="lxr-bF-RUt"/>
+                        <outlet property="gearCollectionView" destination="DYN-b1-djq" id="fnq-av-zwT"/>
+                        <outlet property="gearImageView" destination="u26-w2-A1H" id="3ZW-ea-oCE"/>
+                        <outlet property="idImageView" destination="szt-GO-On8" id="wTQ-HR-CMW"/>
+                        <outlet property="takePicButton" destination="VmJ-0J-bxz" id="D85-nS-aG0"/>
+                        <outlet property="typeImageView" destination="WdX-Wo-chI" id="mMz-rD-45p"/>
+                        <outlet property="userTextField" destination="i8M-41-xDP" id="ewN-cN-Trt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWq-LD-vPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="-342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qU6-hh-TUw">
+            <objects>
+                <viewController id="jbX-jz-DdD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DjJ-4g-8r4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ptg-z5-znG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y2f-7L-gJD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-Xv-NeP">
+                                <rect key="frame" x="139" y="143" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Fisher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9o-Gp-jun">
+                                <rect key="frame" x="139" y="274" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man.png" translatesAutoresizingMaskIntoConstraints="NO" id="IyM-eB-TVI">
+                                <rect key="frame" x="189" y="166" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo6-Gb-PYq">
+                                <rect key="frame" x="410" y="143" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mbQ-u4-A2J" kind="modal" id="2Zw-ti-7Nf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Gears" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-oa-dEl">
+                                <rect key="frame" x="410" y="274" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sports.png" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-qx-TEz">
+                                <rect key="frame" x="462" y="166" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pst-tT-dG6">
+                                <rect key="frame" x="685" y="143" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statistic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwT-zi-Atz">
+                                <rect key="frame" x="685" y="274" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pie-chart-512.png" translatesAutoresizingMaskIntoConstraints="NO" id="hEX-gi-mgJ">
+                                <rect key="frame" x="735" y="166" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-5O-Md2">
+                                <rect key="frame" x="139" y="415" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fisher List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-Vo-E7F">
+                                <rect key="frame" x="139" y="546" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="people.png" translatesAutoresizingMaskIntoConstraints="NO" id="fFB-ge-Yas">
+                                <rect key="frame" x="189" y="438" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-76-WgT">
+                                <rect key="frame" x="410" y="415" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VWx-17-yDW" kind="modal" id="IoV-Ae-eCO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gears List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-7H-Ied">
+                                <rect key="frame" x="410" y="546" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sport.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQw-qe-ivg">
+                                <rect key="frame" x="460" y="438" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottlenose_dolphin_sea_ocean.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-Ar-bwc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wY3-Ie-eDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="628"/>
+        </scene>
+        <!--Fisher Info View Controller-->
+        <scene sceneID="mH1-h1-8tS">
+            <objects>
+                <viewController id="VWx-17-yDW" customClass="FisherInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Ha-cD-1Kf"/>
+                        <viewControllerLayoutGuide type="bottom" id="duf-CF-GNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KOu-Y1-r5g">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uhs-NL-D8b">
+                                <rect key="frame" x="0.0" y="77" width="1024" height="691"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FisherInfoTableViewCell" rowHeight="100" id="wdm-Mj-Vz3" customClass="FisherInfoTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdm-Mj-Vz3" id="Rs2-gn-roN">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FISHER ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjc-yI-TLx">
+                                                    <rect key="frame" x="8" y="10" width="178" height="80"/>
+                                                    <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TYPE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn4-ec-Gm5">
+                                                    <rect key="frame" x="517" y="10" width="178" height="80"/>
+                                                    <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UPDATE TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVL-vj-gs7">
+                                                    <rect key="frame" x="703" y="11" width="178" height="80"/>
+                                                    <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIy-kx-DX3">
+                                                    <rect key="frame" x="380" y="4" width="129" height="91"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GEAR ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-P8-D9B">
+                                                    <rect key="frame" x="194" y="10" width="178" height="80"/>
+                                                    <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-pW-kbj">
+                                                    <rect key="frame" x="889" y="11" width="127" height="80"/>
+                                                    <color key="backgroundColor" red="0.32156862749999998" green="0.60784313729999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fisherIdLabel" destination="Zjc-yI-TLx" id="Iio-Pr-crz"/>
+                                            <outlet property="gearIdLabel" destination="UAY-P8-D9B" id="KhV-zf-1VI"/>
+                                            <outlet property="gearImageView" destination="GIy-kx-DX3" id="hXz-Qv-gdl"/>
+                                            <outlet property="stateLabel" destination="lcL-pW-kbj" id="Iur-eR-821"/>
+                                            <outlet property="timeLabel" destination="mVL-vj-gs7" id="tdm-Xi-Srz"/>
+                                            <outlet property="typeLabel" destination="nn4-ec-Gm5" id="NQ9-zH-d1w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coK-IW-wvA">
+                                <rect key="frame" x="115" y="33" width="909" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVn-yX-HC6">
+                                <rect key="frame" x="0.0" y="33" width="115" height="44"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="dismissView:" destination="VWx-17-yDW" eventType="touchUpInside" id="8T6-GB-Hgt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bsB-Kf-qZy"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="fishersTableView" destination="uhs-NL-D8b" id="bR8-yP-jXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKz-kq-8Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="1665"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottlenose_dolphin_sea_ocean.jpg" width="3872" height="2592"/>
+        <image name="fishackathon_web_wht_logo1.png" width="437" height="200"/>
+        <image name="man.png" width="256" height="256"/>
+        <image name="northern_whale_dolphin_sea_ocean.jpg" width="2324" height="1688"/>
+        <image name="oceanAgent.png" width="1050" height="787"/>
+        <image name="people.png" width="256" height="256"/>
+        <image name="pie-chart-512.png" width="512" height="512"/>
+        <image name="sea_ocean_water.jpg" width="3072" height="2304"/>
+        <image name="sport.png" width="256" height="256"/>
+        <image name="sports.png" width="256" height="256"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="c9j-gC-Tmd"/>
+    </inferredMetricsTieBreakers>
+</document>
